@@ -5,6 +5,7 @@ import java.util.List;
 public class SparePart {
     private String name;
     private int price;
+    private List<Item> items;
 
     public String getName() {
         return name;
@@ -20,6 +21,17 @@ public class SparePart {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public void addToRepair(int quantity, Repair repair)
+    {
+        Item item = new Item(quantity, this, repair );
+        items.add(item);
+        repair.getItems().add(item);
+    }
+
+    public List<Item> getItems() {
+        return items;
     }
     //TODO constructor, composition
 }
