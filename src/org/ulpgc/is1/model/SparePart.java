@@ -33,5 +33,9 @@ public class SparePart {
     public List<Item> getItems() {
         return items;
     }
+
+    public void addRepair(Repair repair) {
+
+    }
     //TODO constructor, composition
 }

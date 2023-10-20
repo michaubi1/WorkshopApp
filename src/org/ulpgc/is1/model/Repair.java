@@ -12,7 +12,9 @@ public class Repair {
     private List<Item> items;
     private int effort;
     private Vehicle vehicle;
-
+    private Payment payment;
+    private Mechanic mechanic;
+    private BreakdownTypes breakdown;
     public int price()
     {
         int price = effort;
@@ -27,6 +29,14 @@ public class Repair {
         Item item = new Item(quantity, sparePart, this );
         items.add(item);
         sparePart.getItems().add(item);
+    }
+    public void pay(){
+        if (this.payment == null){
+            payment = new Payment(this.price());
+        }
+    }
+    public Payment getPayment(){
+        return this.payment;
     }
 
     public void setDate(LocalDateTime date) {
@@ -61,13 +71,28 @@ public class Repair {
         return effort;
     }
 
-    public Repair(LocalDateTime date, String description, int effort, Vehicle vehicle) {
+    public Repair(String description, int effort, BreakdownTypes breakdown, Mechanic mechanic, Vehicle vehicle) {
         this.vehicle = vehicle;
         this.id = ++NEXT_ID;
-        this.date = date;
+        this.date = LocalDateTime.now();
         this.description = description;
         this.items = new ArrayList<>();
         this.effort = effort;
+        this.breakdown = breakdown;
+        this.mechanic = mechanic;
+        this.vehicle = vehicle;
+    }
+
+    public Mechanic getMechanic() {
+        return mechanic;
+    }
+
+    public void setMechanic(Mechanic mechanic) {
+        this.mechanic = mechanic;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
     }
     //TODO add BreakdownType
 }
