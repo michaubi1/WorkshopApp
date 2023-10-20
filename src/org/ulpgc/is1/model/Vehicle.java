@@ -9,10 +9,10 @@ public class Vehicle {
     private Customer owner;
     private List<Repair> repairs;
 
-    public Vehicle(String make, String model, Plate plate, Customer owner) {
+    public Vehicle(String make, String model, String plate, String owner, int phone) {
         this.make = make;
         this.model = model;
-        this.plate = plate;
-        this.owner = owner;
+        this.plate = new Plate();
+        this.owner = new Customer(owner, phone);
     }
 }

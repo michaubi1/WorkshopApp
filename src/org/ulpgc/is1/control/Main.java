@@ -10,7 +10,7 @@ public class Main {
     {
         repairManager.addMechanic("Jan", "Kowalski");
         repairManager.addMechanic("Carlos", "Suarez");
-        repairManager.addVehicle("Toyota", "Yaris", new Plate(), new Customer());
+        repairManager.addVehicle("Toyota", "Yaris", "plateTBD", "", 46636733);
 
     }
 }
