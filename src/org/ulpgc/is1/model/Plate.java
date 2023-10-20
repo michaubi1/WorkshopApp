@@ -8,7 +8,7 @@ public class Plate {
     }
     //using format nnnn LLL,
     public boolean isValid(){
-     return number.matches("/\\d{4}[A-Z]{3}/g");
+     return number.matches("/\\d{4} [A-Z]{3}/g");
     }
 
     public String getNumber() {
