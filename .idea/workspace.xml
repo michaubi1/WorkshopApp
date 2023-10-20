@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Merged our projects">
+    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Implemented Main method, added TODOs, added functionality in RepairManager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697794062223</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented Main method, added TODOs, added functionality in RepairManager">
+      <created>1697799296445</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697799296445</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +136,7 @@
     <MESSAGE value="Created packages and added specified classes inside them" />
     <MESSAGE value="Added attributes and associations to specified classes." />
     <MESSAGE value="Merged our projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged our projects" />
+    <MESSAGE value="Implemented Main method, added TODOs, added functionality in RepairManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Main method, added TODOs, added functionality in RepairManager" />
   </component>
 </project>

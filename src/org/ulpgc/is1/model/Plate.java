@@ -6,8 +6,9 @@ public class Plate {
     public Plate(String number) {
         this.number = number;
     }
+    //using format nnnn LLL,
     public boolean isValid(){
-        return true;
+     return number.matches("/\\d{4}[A-Z]{3}/g");
     }
 
     public String getNumber() {

@@ -33,4 +33,9 @@ public class Mechanic {
     public List<Repair> getRepairs() {
         return repairs;
     }
+    @Override
+    public String toString()
+    {
+        return this.name+" "+this.surname;
+    }
 }

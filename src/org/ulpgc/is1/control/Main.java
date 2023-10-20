@@ -14,8 +14,8 @@ public class Main {
     repairManager.getVehicle(1).getRepairs().get(0).addItem(repairManager.getSparePart(1),1); //Adding spare parts
     repairManager.getMechanic(0).getRepairs().get(0).pay(); //paying
     repairManager.removeVehicle(0);
-    System.out.println(repairManager.countVehicles());
-    System.out.println(repairManager.getMechanic(0).getRepairs().get(0).toString()); //TODO implement toString in Repair
+    System.out.println("Number of Vehicles: "+repairManager.countVehicles());
+    System.out.println(repairManager.getMechanic(0).getRepairs().get(0).toString());
     }
     private static void init(RepairManager repairManager)
     {
