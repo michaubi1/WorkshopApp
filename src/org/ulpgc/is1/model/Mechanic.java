@@ -1,20 +1,15 @@
 package org.ulpgc.is1.model;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Mechanic {
     private String name;
     private String surname;
-    private ArrayList<Repair> repairs = new ArrayList<Repair>();
+    private List<Repair> repairs;
 
     public Mechanic(String name, String surname) {
-        this.name=name;
-        this.surname=surname;
-
+        this.name = name;
+        this.surname = surname;
     }
-    public void addRepair(Repair repair){
-        repairs.add(repair);
-    }
-
     //TODO constructor, getters, setters, composition with RepairManager
 }
