@@ -16,14 +16,36 @@ public class RepairManager {
         this.vehicles = new ArrayList<>();
     }
 
-    public void addVehicle(String make, String model, Plate plate, Customer owner) {
-        vehicles.add(new Vehicle(make, model, plate, owner));
+    public void addVehicle(String make, String model, String plateNumber, String nameOwner, String numberPhone) {
+        vehicles.add(new Vehicle(make, model, new Plate(plateNumber), new Customer(nameOwner, new Phone(numberPhone))));
     }
-    public void repair(Integer effort, String description, Mechanic mechanic, Vehicle vehicle, SparePart sparePart, BreakdownTypes breakdown){
+    public void repair(Integer effort, String description, Mechanic mechanic, Vehicle vehicle, BreakdownTypes breakdown){
         Repair repair = new Repair(description, effort, breakdown, mechanic, vehicle);
+        vehicle.getRepairs().add(repair);
+        mechanic.getRepairs().add(repair);
+    }
 
-        sparePart.addRepair(repair);
-        //vehicle.addRepair(repair);
-        //Mechanic.addRepair(repair);
+    public void addSpareParts(String name, int price) {
+        spareParts.add(new SparePart(name, price));
+    }
+
+    public Mechanic getMechanic(int i) {
+            return mechanics.get(i);
+    }
+
+    public Vehicle getVehicle(int i) {
+        return vehicles.get(i);
+    }
+    public SparePart getSparePart(int i)
+    {
+        return spareParts.get(i);
+    }
+    public void removeVehicle(int i)
+    {
+        this.vehicles.remove(i);
+    }
+    public int countVehicles()
+    {
+        return vehicles.size();
     }
 }

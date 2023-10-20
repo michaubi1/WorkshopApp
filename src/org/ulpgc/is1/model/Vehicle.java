@@ -1,5 +1,6 @@
 package org.ulpgc.is1.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Vehicle {
@@ -14,5 +15,15 @@ public class Vehicle {
         this.model = model;
         this.plate = plate;
         this.owner = owner;
+        this.repairs = new ArrayList<>();
+    }
+    @Override
+    public String toString()
+    {
+        return "make: "+this.make+"\nmodel: "+this.model+"\nplate: "+this.plate.getNumber()+"\nowner: "+this.owner.getName();
+    }
+
+    public List<Repair> getRepairs() {
+        return repairs;
     }
 }

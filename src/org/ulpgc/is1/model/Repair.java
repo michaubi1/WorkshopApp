@@ -94,6 +94,7 @@ public class Repair {
     public Vehicle getVehicle() {
         return vehicle;
     }
-    //TODO add BreakdownType
+    //TODO toString
+
 }
 
