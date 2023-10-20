@@ -1,5 +1,6 @@
 package org.ulpgc.is1.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SparePart {
@@ -37,5 +38,10 @@ public class SparePart {
     public void addRepair(Repair repair) {
 
     }
-    //TODO constructor, composition
+
+    public SparePart(String name, int price) {
+        this.name = name;
+        this.price = price;
+        this.items = new ArrayList<>();
+    }
 }

@@ -16,8 +16,8 @@ public class RepairManager {
         this.vehicles = new ArrayList<>();
     }
 
-    public void addVehicle(String make, String model, String plate, String owner, Integer phone) {
-        vehicles.add(new Vehicle(make, model, plate, owner, phone));
+    public void addVehicle(String make, String model, Plate plate, Customer owner) {
+        vehicles.add(new Vehicle(make, model, plate, owner));
     }
     public void repair(Integer effort, String description, Mechanic mechanic, Vehicle vehicle, SparePart sparePart, BreakdownTypes breakdown){
         Repair repair = new Repair(description, effort, breakdown, mechanic, vehicle);

@@ -94,6 +94,27 @@ public class Repair {
     public Vehicle getVehicle() {
         return vehicle;
     }
-    //TODO add BreakdownType
+    //TODO toString
+    @Override
+    public String toString()
+    {
+        String retStr = "Repair ID: "+this.id+
+                "\nDate: "+this.date+
+                "\nDescription: "+this.description+
+                "\neffort: "+this.effort+
+                "\nVehicle: "+this.vehicle.toString()+
+                "\nMechanic: "+this.mechanic.toString();
+        for(Item item: items)
+        {
+            retStr+="\nPart: "+item.getSparePart().getName()+", Quantity: "+item.getQuantity();
+        }
+        if(payment!=null)
+            retStr+="\nPayment: "+payment.getAmount()+" on date: "+payment.getDate();
+        else
+            retStr+="\nPayment not completed";
+        return retStr;
+
+    }
+
 }
 
