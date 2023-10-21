@@ -9,12 +9,12 @@ public class Repair {
     private final int id;
     private LocalDateTime date;
     private String description;
-    private List<Item> items;
+    private List<SparePart> parts;
     private int effort;
     private Vehicle vehicle;
     private Payment payment;
     private Mechanic mechanic;
-    private BreakdownTypes breakdown;
+    private ArrayList<BreakdownTypes> breakdowns;
     public int price()
     {
         int price = effort;
@@ -23,12 +23,6 @@ public class Repair {
             price += item.getQuantity()*item.getSparePart().getPrice();
         }
         return price;
-    }
-    public void addItem(SparePart sparePart, int quantity)
-    {
-        Item item = new Item(quantity, sparePart, this );
-        items.add(item);
-        sparePart.getItems().add(item);
     }
     public void pay(){
         if (this.payment == null){
@@ -51,7 +45,7 @@ public class Repair {
         this.effort = effort;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -71,16 +65,17 @@ public class Repair {
         return effort;
     }
 
-    public Repair(String description, int effort, BreakdownTypes breakdown, Mechanic mechanic, Vehicle vehicle) {
+    public Repair(String description, int effort, ArrayList<BreakdownTypes> breakdown, Mechanic mechanic, Vehicle vehicle) throws Exception {
+        if (breakdown.size() != 1 && breakdown.size()!=2) throw new Exception("wrong breakdown");
         this.vehicle = vehicle;
         this.id = ++NEXT_ID;
         this.date = LocalDateTime.now();
         this.description = description;
-        this.items = new ArrayList<>();
         this.effort = effort;
-        this.breakdown = breakdown;
+        this.breakdowns = breakdown;
         this.mechanic = mechanic;
         this.vehicle = vehicle;
+        this.parts = new ArrayList<SparePart>();
     }
 
     public Mechanic getMechanic() {

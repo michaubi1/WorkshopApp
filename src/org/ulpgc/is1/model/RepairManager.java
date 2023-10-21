@@ -16,14 +16,16 @@ public class RepairManager {
         this.vehicles = new ArrayList<>();
     }
 
-    public void addVehicle(String make, String model, Plate plate, Customer owner) {
-        vehicles.add(new Vehicle(make, model, plate, owner));
+    public void addVehicle(String make, String model, String plate, String owner, String phone) throws Exception {
+        vehicles.add(new Vehicle(make, model, plate, owner, phone));
     }
-    public void repair(Integer effort, String description, Mechanic mechanic, Vehicle vehicle, SparePart sparePart, BreakdownTypes breakdown){
+    public void repair(Integer effort, String description, Mechanic mechanic, Vehicle vehicle, ArrayList<SparePart> partsList, ArrayList<Integer> partAmount, ArrayList<BreakdownTypes> breakdown) throws Exception {
         Repair repair = new Repair(description, effort, breakdown, mechanic, vehicle);
 
-        sparePart.addRepair(repair);
-        //vehicle.addRepair(repair);
-        //Mechanic.addRepair(repair);
+        for (int i=0; i<=partsList.size(); i++) {
+            partsList.get(i).addRepair(partAmount.get(i), repair);
+        }
+        vehicle.addRepair(repair);
+        mechanic.addRepair(repair);
     }
 }

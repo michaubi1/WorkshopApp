@@ -6,15 +6,12 @@ public class Customer {
     private String name;
     private Phone phone;
     List<Vehicle> vehicles;
-
-    public Customer(String name, Phone phone) {
-        this.name = name;
-        if(phone.isValid())
-            this.phone = phone;
-        else phone = new Phone("XXXX");
+    public Customer(String name, String number, Vehicle vehicle) throws Exception {
+        this.name=name;
+        this.phone = new Phone(number);
+        this.vehicles.add(vehicle);
     }
-
-    public String getName() {
-        return this.name;
+    public void addVehicle(Vehicle vehicle){
+        this.vehicles.add(vehicle);
     }
 }

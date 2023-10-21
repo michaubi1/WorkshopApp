@@ -6,11 +6,10 @@ public class Main {
     RepairManager repairManager = new RepairManager();
 
     }
-    private static void init(RepairManager repairManager)
-    {
+    private static void init(RepairManager repairManager) throws Exception {
         repairManager.addMechanic("Jan", "Kowalski");
         repairManager.addMechanic("Carlos", "Suarez");
-        repairManager.addVehicle("Toyota", "Yaris", new Plate(), new Customer());
+        repairManager.addVehicle("Toyota", "Yaris", "plateTBD", "Federico Reyes", "46636733");
 
     }
 }
