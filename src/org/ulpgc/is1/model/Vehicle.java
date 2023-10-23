@@ -26,4 +26,5 @@ public class Vehicle {
     public void addRepair(Repair repair) {
         repairs.add(repair);
     }
+    public Customer getOwner() {return this.owner;}
 }

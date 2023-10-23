@@ -6,12 +6,14 @@ public class Customer {
     private String name;
     private Phone phone;
     List<Vehicle> vehicles;
-    public Customer(String name, String number, Vehicle vehicle) throws Exception {
-        this.name=name;
-        this.phone = new Phone(number);
-        this.vehicles.add(vehicle);
+
+    public Customer(String name, Phone phone) {
+        this.name = name;
+        this.phone = phone;
     }
-    public void addVehicle(Vehicle vehicle){
-        this.vehicles.add(vehicle);
+
+    public String getName() {
+        return this.name;
     }
+    public Phone getPhone(){return this.phone;}
 }

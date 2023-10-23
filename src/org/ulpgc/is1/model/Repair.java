@@ -65,8 +65,8 @@ public class Repair {
         return effort;
     }
 
-    public Repair(String description, int effort, ArrayList<BreakdownTypes> breakdown, Mechanic mechanic, Vehicle vehicle) throws Exception {
-        if (breakdown.size() != 1 && breakdown.size()!=2) throw new Exception("wrong breakdown");
+    public Repair(String description, int effort, ArrayList<BreakdownTypes> breakdown, Mechanic mechanic, Vehicle vehicle) {
+
         this.vehicle = vehicle;
         this.id = ++NEXT_ID;
         this.date = LocalDateTime.now();

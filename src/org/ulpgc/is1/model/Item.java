@@ -1,7 +1,6 @@
 package org.ulpgc.is1.model;
 
 public class Item {
-    //TODO research paired relations, rework item
     private int quantity;
     private SparePart sparePart;
     private Repair repair;
