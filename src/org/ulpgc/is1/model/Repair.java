@@ -9,7 +9,7 @@ public class Repair {
     private final int id;
     private LocalDateTime date;
     private String description;
-    private List<SparePart> parts;
+    private List<Item> items;
     private int effort;
     private Vehicle vehicle;
     private Payment payment;
@@ -75,7 +75,10 @@ public class Repair {
         this.breakdowns = breakdown;
         this.mechanic = mechanic;
         this.vehicle = vehicle;
-        this.parts = new ArrayList<SparePart>();
+        this.items = new ArrayList<Item>();
+        if (breakdown.size() != 1 && breakdown.size()!=2) {this.breakdowns= new ArrayList<BreakdownTypes>();
+            this.breakdowns.add(BreakdownTypes.electrical);
+            this.breakdowns.add(BreakdownTypes.mechanical);};
     }
 
     public Mechanic getMechanic() {
@@ -98,7 +101,10 @@ public class Repair {
                 "\nDescription: "+this.description+
                 "\neffort: "+this.effort+
                 "\nVehicle: "+this.vehicle.toString()+
-                "\nMechanic: "+this.mechanic.toString();
+                "\nMechanic: "+this.mechanic.toString()+
+                "\nBrekdown Type(s): ";
+        for(BreakdownTypes breakdown: breakdowns)
+            retStr+=breakdown.toString()+" ";
         for(Item item: items)
         {
             retStr+="\nPart: "+item.getSparePart().getName()+", Quantity: "+item.getQuantity();

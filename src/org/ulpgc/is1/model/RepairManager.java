@@ -1,6 +1,7 @@
 package org.ulpgc.is1.model;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class RepairManager {
     ArrayList<Mechanic> mechanics;
@@ -63,10 +64,28 @@ public class RepairManager {
         addAll(repair, vehicle, mechanic, partsList, partAmount);
     }
 
-        for (int i=0; i<=partsList.size(); i++) {
-            partsList.get(i).addRepair(partAmount.get(i), repair);
-        }
-        vehicle.addRepair(repair);
-        mechanic.addRepair(repair);
+    public void addSpareParts(String name, int price) {
+        spareParts.add(new SparePart(name, price));
     }
+
+    public Mechanic getMechanic(int i) {
+        return mechanics.get(i);
+    }
+
+    public Vehicle getVehicle(int i) {
+        return vehicles.get(i);
+    }
+    public SparePart getSparePart(int i)
+    {
+        return spareParts.get(i);
+    }
+    public void removeVehicle(int i)
+    {
+        this.vehicles.remove(i);
+    }
+    public int countVehicles()
+    {
+        return vehicles.size();
+    }
+
 }
