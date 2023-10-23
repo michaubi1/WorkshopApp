@@ -1,0 +1,129 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"c4ea5583-8b77-4b26-88a9-dfcaddc5a17c\" name=\"Changes\" comment=\"Added attributes and associations to specified classes.\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Enum\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2WhcSwME3PkjcyyjtNsSe4Xymay\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"master\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"c4ea5583-8b77-4b26-88a9-dfcaddc5a17c\" name=\"Changes\" comment=\"\" />\r\n      <created>1697188255664</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1697188255664</updated>\r\n      <workItem from=\"1697188256855\" duration=\"7412000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Created packages and added specified classes inside them\">\r\n      <created>1697190700356</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1697190700356</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added attributes and associations to specified classes.\">\r\n      <created>1697194101025</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1697194101025</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Created packages and added specified classes inside them\" />\r\n    <MESSAGE value=\"Added attributes and associations to specified classes.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added attributes and associations to specified classes.\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a48a87db66f921fcec63766cc17f90fc47edb191)
++++ b/.idea/workspace.xml	(date 1698068866951)
+@@ -1,23 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Added attributes and associations to specified classes.">
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" afterDir="false" />
+-    </list>
++    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Added isValid() to Plate implemented toString method in Repair to display data and finished main class." />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -50,7 +34,7 @@
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "master"
++    "nodejs_package_manager_path": "npm"
+   }
+ }]]></component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+@@ -77,7 +61,35 @@
+       <option name="project" value="LOCAL" />
+       <updated>1697194101025</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Merged our projects">
++      <created>1697793784075</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1697793784075</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Merged our projects">
++      <created>1697794062223</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1697794062223</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Implemented Main method, added TODOs, added functionality in RepairManager">
++      <created>1697799296445</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1697799296445</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Added isValid() to Plate implemented toString method in Repair to display data and finished main class.">
++      <created>1697803558164</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1697803558164</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -88,7 +100,34 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State />
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="master" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
++    <option name="RECENT_FILTERS">
++      <map>
++        <entry key="Branch">
++          <value>
++            <list>
++              <RecentGroup>
++                <option name="FILTER_VALUES">
++                  <option value="master" />
++                </option>
++              </RecentGroup>
++            </list>
+           </value>
+         </entry>
+       </map>
+@@ -97,6 +136,9 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Created packages and added specified classes inside them" />
+     <MESSAGE value="Added attributes and associations to specified classes." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added attributes and associations to specified classes." />
++    <MESSAGE value="Merged our projects" />
++    <MESSAGE value="Implemented Main method, added TODOs, added functionality in RepairManager" />
++    <MESSAGE value="Added isValid() to Plate implemented toString method in Repair to display data and finished main class." />
++    <option name="LAST_COMMIT_MESSAGE" value="Added isValid() to Plate implemented toString method in Repair to display data and finished main class." />
+   </component>
+ </project>
+\ No newline at end of file

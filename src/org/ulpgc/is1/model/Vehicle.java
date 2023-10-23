@@ -1,6 +1,5 @@
 package org.ulpgc.is1.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Vehicle {
@@ -10,20 +9,22 @@ public class Vehicle {
     private Customer owner;
     private List<Repair> repairs;
 
-    public Vehicle(String make, String model, Plate plate, Customer owner) {
+    public Vehicle(String make, String model, String plate, String owner, String phone) throws Exception {
         this.make = make;
         this.model = model;
-        this.plate = plate;
-        this.owner = owner;
-        this.repairs = new ArrayList<>();
+        this.plate = new Plate();
+        this.owner = new Customer(owner, phone, this);
     }
-    @Override
-    public String toString()
-    {
-        return "make: "+this.make+"\nmodel: "+this.model+"\nplate: "+this.plate.getNumber()+"\nowner: "+this.owner.getName();
+    public Vehicle(String make, String model, String plate, Customer owner) {
+        this.make = make;
+        this.model = model;
+        this.plate = new Plate();
+        this.owner = owner;
+        owner.addVehicle(this);
     }
 
-    public List<Repair> getRepairs() {
-        return repairs;
+    public void addRepair(Repair repair) {
+        repairs.add(repair);
     }
+    public Customer getOwner() {return this.owner;}
 }

@@ -1,12 +1,11 @@
 package org.ulpgc.is1.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 
 public class SparePart {
     private String name;
     private int price;
-    private List<Item> items;
+    private HashMap<Integer, Integer> items;
 
     public String getName() {
         return name;
@@ -24,24 +23,20 @@ public class SparePart {
         this.price = price;
     }
 
-    public void addToRepair(int quantity, Repair repair)
-    {
-        Item item = new Item(quantity, this, repair );
-        items.add(item);
-        repair.getItems().add(item);
-    }
-
-    public List<Item> getItems() {
+    public HashMap<Integer, Integer> getItems() {
         return items;
     }
 
-    public void addRepair(Repair repair) {
+    public void addRepair(Integer quantity, Repair repair) {
+        Item item = new Item(quantity, this, repair );
+        items.put(repair.getId(), quantity);
+        repair.getItems().add(item);
 
     }
 
     public SparePart(String name, int price) {
         this.name = name;
         this.price = price;
-        this.items = new ArrayList<>();
+        this.items = new HashMap<Integer, Integer>();
     }
 }

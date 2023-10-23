@@ -9,12 +9,11 @@ public class Customer {
 
     public Customer(String name, Phone phone) {
         this.name = name;
-        if(phone.isValid())
-            this.phone = phone;
-        else phone = new Phone("XXXX");
+        this.phone = phone;
     }
 
     public String getName() {
         return this.name;
     }
+    public Phone getPhone(){return this.phone;}
 }

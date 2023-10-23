@@ -38,4 +38,8 @@ public class Mechanic {
     {
         return this.name+" "+this.surname;
     }
+
+    public void addRepair(Repair repair) {
+        repairs.add(repair);
+    }
 }
