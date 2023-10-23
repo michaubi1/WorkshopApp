@@ -1,0 +1,59 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"c4ea5583-8b77-4b26-88a9-dfcaddc5a17c\" name=\"Changes\" comment=\"Added isValid() to Plate implemented toString method in Repair to display data and finished main class.\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Enum\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Pull.Settings\">\n    <option name=\"OPTIONS\">\n      <set>\n        <option value=\"REBASE\" />\n      </set>\n    </option>\n  </component>\n  <component name=\"Git.Rebase.Settings\">\n    <option name=\"NEW_BASE\" value=\"origin/master\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2WhcSwME3PkjcyyjtNsSe4Xymay\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;\n  }\n}</component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"c4ea5583-8b77-4b26-88a9-dfcaddc5a17c\" name=\"Changes\" comment=\"\" />\n      <created>1697188255664</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1697188255664</updated>\n      <workItem from=\"1697188256855\" duration=\"7412000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Created packages and added specified classes inside them\">\n      <created>1697190700356</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697190700356</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Added attributes and associations to specified classes.\">\n      <created>1697194101025</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697194101025</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Merged our projects\">\n      <created>1697793784075</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697793784075</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Merged our projects\">\n      <created>1697794062223</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697794062223</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Implemented Main method, added TODOs, added functionality in RepairManager\">\n      <created>1697799296445</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697799296445</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Added isValid() to Plate implemented toString method in Repair to display data and finished main class.\">\n      <created>1697803558164</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697803558164</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"7\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"master\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"RECENT_FILTERS\">\n      <map>\n        <entry key=\"Branch\">\n          <value>\n            <list>\n              <RecentGroup>\n                <option name=\"FILTER_VALUES\">\n                  <option value=\"master\" />\n                </option>\n              </RecentGroup>\n            </list>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Created packages and added specified classes inside them\" />\n    <MESSAGE value=\"Added attributes and associations to specified classes.\" />\n    <MESSAGE value=\"Merged our projects\" />\n    <MESSAGE value=\"Implemented Main method, added TODOs, added functionality in RepairManager\" />\n    <MESSAGE value=\"Added isValid() to Plate implemented toString method in Repair to display data and finished main class.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added isValid() to Plate implemented toString method in Repair to display data and finished main class.\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 1b39a5ab32c73bd10ebf2ad6662cdf5804350814)
++++ b/.idea/workspace.xml	(date 1698071065443)
+@@ -1,9 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Added isValid() to Plate implemented toString method in Repair to display data and finished main class.">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-    </list>
++    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Reverted back to the verison with no hashmap" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -101,7 +99,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1697803558164</updated>
+     </task>
+-    <option name="localTasksCounter" value="7" />
++    <task id="LOCAL-00007" summary="Reverted back to the verison with no hashmap">
++      <created>1698070852587</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1698070852587</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -139,6 +144,11 @@
+                   <option value="master" />
+                 </option>
+               </RecentGroup>
++              <RecentGroup>
++                <option name="FILTER_VALUES">
++                  <option value="HEAD" />
++                </option>
++              </RecentGroup>
+             </list>
+           </value>
+         </entry>
+@@ -151,6 +161,7 @@
+     <MESSAGE value="Merged our projects" />
+     <MESSAGE value="Implemented Main method, added TODOs, added functionality in RepairManager" />
+     <MESSAGE value="Added isValid() to Plate implemented toString method in Repair to display data and finished main class." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added isValid() to Plate implemented toString method in Repair to display data and finished main class." />
++    <MESSAGE value="Reverted back to the verison with no hashmap" />
++    <option name="LAST_COMMIT_MESSAGE" value="Reverted back to the verison with no hashmap" />
+   </component>
+ </project>
+\ No newline at end of file
