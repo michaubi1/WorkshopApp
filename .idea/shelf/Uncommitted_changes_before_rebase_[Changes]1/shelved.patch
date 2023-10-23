@@ -1,0 +1,226 @@
+Index: src/org/ulpgc/is1/control/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.control;\nimport org.ulpgc.is1.model.*;\n\npublic class Main {\n    public static void main(String[] args) {\n    RepairManager repairManager = new RepairManager();\n\n    }\n    private static void init(RepairManager repairManager) throws Exception {\n        repairManager.addMechanic(\"Jan\", \"Kowalski\");\n        repairManager.addMechanic(\"Carlos\", \"Suarez\");\n        repairManager.addVehicle(\"Toyota\", \"Yaris\", \"plateTBD\", \"Federico Reyes\", \"46636733\");\n\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/control/Main.java b/src/org/ulpgc/is1/control/Main.java
+--- a/src/org/ulpgc/is1/control/Main.java	(revision a48a87db66f921fcec63766cc17f90fc47edb191)
++++ b/src/org/ulpgc/is1/control/Main.java	(date 1698070306872)
+@@ -1,15 +1,29 @@
+ package org.ulpgc.is1.control;
+ import org.ulpgc.is1.model.*;
+ 
++
+ public class Main {
+     public static void main(String[] args) {
+     RepairManager repairManager = new RepairManager();
+-
++    init(repairManager);
++    System.out.println("Mechanic: "+repairManager.getMechanic(0).getName()+" "+repairManager.getMechanic(0).getSurname());
++    System.out.println("Vehicle:\n"+repairManager.getVehicle(1).toString());
++    repairManager.repair(100, "Quick Repair",repairManager.getMechanic(0), repairManager.getVehicle(1),BreakdownTypes.mechanical);
++    repairManager.getVehicle(1).getRepairs().get(0).addItem(repairManager.getSparePart(0),1); //Adding spare parts I dont know how to add two spare parts in the constructor
++    repairManager.getVehicle(1).getRepairs().get(0).addItem(repairManager.getSparePart(1),1); //Adding spare parts
++    repairManager.getMechanic(0).getRepairs().get(0).pay(); //paying
++    repairManager.removeVehicle(0);
++    System.out.println("Number of Vehicles: "+repairManager.countVehicles());
++    System.out.println(repairManager.getMechanic(0).getRepairs().get(0).toString());
+     }
+-    private static void init(RepairManager repairManager) throws Exception {
++    private static void init(RepairManager repairManager)
++    {
+         repairManager.addMechanic("Jan", "Kowalski");
+         repairManager.addMechanic("Carlos", "Suarez");
+-        repairManager.addVehicle("Toyota", "Yaris", "plateTBD", "Federico Reyes", "46636733");
+-
++        repairManager.addVehicle("Toyota", "Yaris", "GC 97614", "Jose", "980123456");
++        repairManager.addVehicle("Toyota", "Hilux", "GC 89272", "Antonio", "123");
++        repairManager.addSpareParts("Wheel", 200);
++        repairManager.addSpareParts("Engine", 3000);
+     }
+-}
++
++}
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"c4ea5583-8b77-4b26-88a9-dfcaddc5a17c\" name=\"Changes\" comment=\"Added attributes and associations to specified classes.\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Enum\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2WhcSwME3PkjcyyjtNsSe4Xymay\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"git-widget-placeholder\": \"master\"\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"c4ea5583-8b77-4b26-88a9-dfcaddc5a17c\" name=\"Changes\" comment=\"\" />\n      <created>1697188255664</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1697188255664</updated>\n      <workItem from=\"1697188256855\" duration=\"7412000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Created packages and added specified classes inside them\">\n      <created>1697190700356</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697190700356</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Added attributes and associations to specified classes.\">\n      <created>1697194101025</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697194101025</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Created packages and added specified classes inside them\" />\n    <MESSAGE value=\"Added attributes and associations to specified classes.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added attributes and associations to specified classes.\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a48a87db66f921fcec63766cc17f90fc47edb191)
++++ b/.idea/workspace.xml	(date 1698070308963)
+@@ -1,22 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Added attributes and associations to specified classes.">
++    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Corrected the isValid() method for plate">
+       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -31,7 +19,15 @@
+       </list>
+     </option>
+   </component>
++  <component name="Git.Merge.Settings">
++    <option name="BRANCH" value="origin/master" />
++  </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="Item_class" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+@@ -45,14 +41,15 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "master"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -62,6 +59,9 @@
+       <option name="presentableId" value="Default" />
+       <updated>1697188255664</updated>
+       <workItem from="1697188256855" duration="7412000" />
++      <workItem from="1697805104718" duration="12000" />
++      <workItem from="1697805154963" duration="3000" />
++      <workItem from="1698065973624" duration="2157000" />
+     </task>
+     <task id="LOCAL-00001" summary="Created packages and added specified classes inside them">
+       <created>1697190700356</created>
+@@ -77,7 +77,42 @@
+       <option name="project" value="LOCAL" />
+       <updated>1697194101025</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Merged our projects">
++      <created>1697793784075</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1697793784075</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Merged our projects">
++      <created>1697794062223</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1697794062223</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Implemented Main method, added TODOs, added functionality in RepairManager">
++      <created>1697799296445</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1697799296445</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Added isValid() to Plate implemented toString method in Repair to display data and finished main class.">
++      <created>1697803558164</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1697803558164</updated>
++    </task>
++    <task id="LOCAL-00007" summary="Corrected the isValid() method for plate">
++      <created>1697803769324</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1697803769324</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -88,7 +123,34 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State />
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="master" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
++          </value>
++        </entry>
++      </map>
++    </option>
++    <option name="RECENT_FILTERS">
++      <map>
++        <entry key="Branch">
++          <value>
++            <list>
++              <RecentGroup>
++                <option name="FILTER_VALUES">
++                  <option value="master" />
++                </option>
++              </RecentGroup>
++            </list>
+           </value>
+         </entry>
+       </map>
+@@ -97,6 +159,14 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Created packages and added specified classes inside them" />
+     <MESSAGE value="Added attributes and associations to specified classes." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added attributes and associations to specified classes." />
++    <MESSAGE value="Merged our projects" />
++    <MESSAGE value="Implemented Main method, added TODOs, added functionality in RepairManager" />
++    <MESSAGE value="Added isValid() to Plate implemented toString method in Repair to display data and finished main class." />
++    <MESSAGE value="Corrected the isValid() method for plate" />
++    <option name="LAST_COMMIT_MESSAGE" value="Corrected the isValid() method for plate" />
++  </component>
++  <component name="XSLT-Support.FileAssociations.UIState">
++    <expand />
++    <select />
+   </component>
+ </project>
+\ No newline at end of file

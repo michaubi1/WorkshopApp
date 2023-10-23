@@ -1,0 +1,205 @@
+Index: src/org/ulpgc/is1/model/RepairManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.model;\n\npublic class RepairManager {\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/model/RepairManager.java b/src/org/ulpgc/is1/model/RepairManager.java
+--- a/src/org/ulpgc/is1/model/RepairManager.java	(revision e447c05c043dfe1b14fea7ee23aa56e2b3868182)
++++ b/src/org/ulpgc/is1/model/RepairManager.java	(date 1697792246709)
+@@ -1,4 +1,22 @@
+ package org.ulpgc.is1.model;
+ 
++import java.util.ArrayList;
++
+ public class RepairManager {
++    ArrayList<Mechanic> mechanics;
++    ArrayList<SparePart> spareParts;
++    ArrayList<Vehicle> vehicles;
++    public void addMechanic(String name, String surname)
++    {
++        mechanics.add(new Mechanic(name, surname));
++    }
++    public RepairManager() {
++        this.mechanics = new ArrayList<>();
++        this.spareParts = new ArrayList<>();
++        this.vehicles = new ArrayList<>();
++    }
++
++    public void addVehicle(String make, String model, Plate plate, Customer owner) {
++        vehicles.add(new Vehicle(make, model, plate, owner));
++    }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"c4ea5583-8b77-4b26-88a9-dfcaddc5a17c\" name=\"Changes\" comment=\"Added attributes and associations to specified classes.\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/BreakdownTypes.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/BreakdownTypes.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Payment.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Payment.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Enum\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2WhcSwME3PkjcyyjtNsSe4Xymay\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\"\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"c4ea5583-8b77-4b26-88a9-dfcaddc5a17c\" name=\"Changes\" comment=\"\" />\n      <created>1697188255664</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1697188255664</updated>\n      <workItem from=\"1697188256855\" duration=\"7412000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Created packages and added specified classes inside them\">\n      <created>1697190700356</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697190700356</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Added attributes and associations to specified classes.\">\n      <created>1697194101025</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1697194101025</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Created packages and added specified classes inside them\" />\n    <MESSAGE value=\"Added attributes and associations to specified classes.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added attributes and associations to specified classes.\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision e447c05c043dfe1b14fea7ee23aa56e2b3868182)
++++ b/.idea/workspace.xml	(date 1697793479912)
+@@ -1,15 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Added attributes and associations to specified classes.">
++    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Added attributes to all classes and implemented more associations. Created methods to add items to repairs in both Repair and SparePart. Created isValid() function for checking the phone number.">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/BreakdownTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/BreakdownTypes.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Payment.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Mechanic.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -39,13 +35,13 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -54,7 +50,11 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1697188255664</updated>
+-      <workItem from="1697188256855" duration="7412000" />
++      <workItem from="1697188256855" duration="8597000" />
++      <workItem from="1697460289712" duration="16000" />
++      <workItem from="1697543339594" duration="76000" />
++      <workItem from="1697788875539" duration="562000" />
++      <workItem from="1697790171255" duration="3298000" />
+     </task>
+     <task id="LOCAL-00001" summary="Created packages and added specified classes inside them">
+       <created>1697190700356</created>
+@@ -70,7 +70,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1697194101025</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Added attributes to all classes and implemented more associations. Created methods to add items to repairs in both Repair and SparePart. Created isValid() function for checking the phone number.">
++      <created>1697197993010</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1697197993010</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -90,6 +97,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Created packages and added specified classes inside them" />
+     <MESSAGE value="Added attributes and associations to specified classes." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added attributes and associations to specified classes." />
++    <MESSAGE value="Added attributes to all classes and implemented more associations. Created methods to add items to repairs in both Repair and SparePart. Created isValid() function for checking the phone number." />
++    <option name="LAST_COMMIT_MESSAGE" value="Added attributes to all classes and implemented more associations. Created methods to add items to repairs in both Repair and SparePart. Created isValid() function for checking the phone number." />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/org/ulpgc/is1/model/Mechanic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.model;\n\nimport java.util.List;\n\npublic class Mechanic {\n    private String name;\n    private String surname;\n    private List<Repair> repairs;\n    //TODO constructor, getters, setters, composition with RepairManager\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/model/Mechanic.java b/src/org/ulpgc/is1/model/Mechanic.java
+--- a/src/org/ulpgc/is1/model/Mechanic.java	(revision e447c05c043dfe1b14fea7ee23aa56e2b3868182)
++++ b/src/org/ulpgc/is1/model/Mechanic.java	(date 1697793479474)
+@@ -1,10 +1,21 @@
+ package org.ulpgc.is1.model;
+ 
++import java.util.ArrayList;
+ import java.util.List;
+ 
+ public class Mechanic {
+     private String name;
+     private String surname;
+     private List<Repair> repairs;
++
++    public Mechanic(String name, String surname) {
++        this.name = name;
++        this.surname = surname;
++        repairs = new ArrayList<>();
++    }
++    public void addRepair(Repair repair)
++    {
++        repairs.add(repair);
++    }
+     //TODO constructor, getters, setters, composition with RepairManager
+ }
+Index: src/org/ulpgc/is1/control/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.control;\n\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello world!\");\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/control/Main.java b/src/org/ulpgc/is1/control/Main.java
+--- a/src/org/ulpgc/is1/control/Main.java	(revision e447c05c043dfe1b14fea7ee23aa56e2b3868182)
++++ b/src/org/ulpgc/is1/control/Main.java	(date 1697792295389)
+@@ -1,7 +1,16 @@
+ package org.ulpgc.is1.control;
++import org.ulpgc.is1.model.*;
+ 
+ public class Main {
+     public static void main(String[] args) {
+-        System.out.println("Hello world!");
++    RepairManager repairManager = new RepairManager();
++
++    }
++    private static void init(RepairManager repairManager)
++    {
++        repairManager.addMechanic("Jan", "Kowalski");
++        repairManager.addMechanic("Carlos", "Suarez");
++        repairManager.addVehicle("Toyota", "Yaris", new Plate(), new Customer());
++
+     }
+ }
+\ No newline at end of file
+Index: src/org/ulpgc/is1/model/Vehicle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.ulpgc.is1.model;\n\nimport java.util.List;\n\npublic class Vehicle {\n    private String make;\n    private String model;\n    private Plate plate;\n    private Customer owner;\n    private List<Repair> repairs;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/org/ulpgc/is1/model/Vehicle.java b/src/org/ulpgc/is1/model/Vehicle.java
+--- a/src/org/ulpgc/is1/model/Vehicle.java	(revision e447c05c043dfe1b14fea7ee23aa56e2b3868182)
++++ b/src/org/ulpgc/is1/model/Vehicle.java	(date 1697792011576)
+@@ -8,4 +8,11 @@
+     private Plate plate;
+     private Customer owner;
+     private List<Repair> repairs;
++
++    public Vehicle(String make, String model, Plate plate, Customer owner) {
++        this.make = make;
++        this.model = model;
++        this.plate = plate;
++        this.owner = owner;
++    }
+ }
