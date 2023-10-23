@@ -9,9 +9,10 @@ public class Phone {
         return number.matches("\\+\\d{11,12}|\\d{9}");
     }
 
-    public Phone(String number) throws Exception{
+    public Phone(String number) {
         this.number = number;
-        if (!this.isValid()) {throw new Exception("invalid phone number");}
-
+        if(!this.isValid())
+            this.number = "XXXX";
     }
+    public String getNumber(){return this.number;}
 }
