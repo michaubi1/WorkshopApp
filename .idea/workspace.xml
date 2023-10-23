@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Added attributes and associations to specified classes.">
+    <list default="true" id="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" name="Changes" comment="Created all the getters and setters. Final version.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" afterDir="false" />
     </list>
-    <list id="f6da1169-aae5-414a-bde8-9cf8380de450" name="Changes by michalbieganski" comment="">
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Plate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/SparePart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java" afterDir="false" />
-    </list>
+    <list id="f6da1169-aae5-414a-bde8-9cf8380de450" name="Changes by michalbieganski" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,37 +29,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/org/ulpgc/is1/model/Repair.java">
-      <ranges>
-        <range start1="11" end1="12" start2="11" end2="12" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-        <range start1="67" end1="69" start2="67" end2="69" changelist="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" />
-        <range start1="77" end1="78" start2="77" end2="81" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-        <range start1="100" end1="101" start2="103" end2="107" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/org/ulpgc/is1/model/RepairManager.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="4" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-        <range start1="8" end1="8" start2="9" end2="10" changelist="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" />
-        <range start1="18" end1="20" start2="20" end2="33" changelist="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" />
-        <range start1="21" end1="22" start2="34" end2="39" changelist="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" />
-        <range start1="23" end1="23" start2="40" end2="65" changelist="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" />
-        <range start1="24" end1="29" start2="66" end2="72" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-        <range start1="30" end1="30" start2="73" end2="90" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/org/ulpgc/is1/model/Vehicle.java">
-      <ranges>
-        <range start1="2" end1="3" start2="2" end2="4" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-        <range start1="9" end1="10" start2="10" end2="11" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-        <range start1="11" end1="12" start2="12" end2="13" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-        <range start1="14" end1="16" start2="15" end2="18" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-        <range start1="17" end1="23" start2="19" end2="27" changelist="f6da1169-aae5-414a-bde8-9cf8380de450" />
-        <range start1="28" end1="28" start2="32" end2="33" changelist="c4ea5583-8b77-4b26-88a9-dfcaddc5a17c" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -84,15 +40,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -117,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697194101025</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created all the getters and setters. Final version.">
+      <created>1698077010938</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698077010938</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created packages and added specified classes inside them" />
     <MESSAGE value="Added attributes and associations to specified classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added attributes and associations to specified classes." />
+    <MESSAGE value="Created all the getters and setters. Final version." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created all the getters and setters. Final version." />
   </component>
 </project>

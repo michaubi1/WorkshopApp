@@ -88,6 +88,15 @@ public class RepairManager {
         return vehicles.size();
     }
 
+    public void removeMechanic(int i)
+    {
+        this.mechanics.remove(i);
+    }
+    public void removeSparePart(int i)
+    {
+        this.spareParts.remove(i);
+    }
+
     public ArrayList<Mechanic> getMechanics() {
         return mechanics;
     }
