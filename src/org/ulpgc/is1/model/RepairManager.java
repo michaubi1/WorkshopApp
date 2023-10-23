@@ -88,4 +88,15 @@ public class RepairManager {
         return vehicles.size();
     }
 
+    public ArrayList<Mechanic> getMechanics() {
+        return mechanics;
+    }
+
+    public ArrayList<SparePart> getSpareParts() {
+        return spareParts;
+    }
+
+    public ArrayList<Vehicle> getVehicles() {
+        return vehicles;
+    }
 }

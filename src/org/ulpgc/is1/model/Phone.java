@@ -15,4 +15,8 @@ public class Phone {
             this.number = "XXXX";
     }
     public String getNumber(){return this.number;}
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
 }

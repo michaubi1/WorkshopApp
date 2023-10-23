@@ -16,4 +16,16 @@ public class Customer {
         return this.name;
     }
     public Phone getPhone(){return this.phone;}
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPhone(Phone phone) {
+        this.phone = phone;
+    }
+
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
 }

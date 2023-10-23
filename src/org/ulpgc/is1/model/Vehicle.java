@@ -23,6 +23,34 @@ public class Vehicle {
         return "make: "+this.make+"\nmodel: "+this.model+"\nplate: "+this.plate.getNumber()+"\nowner: "+this.owner.getName();
     }
 
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Plate getPlate() {
+        return plate;
+    }
+
+    public void setPlate(Plate plate) {
+        this.plate = plate;
+    }
+
+    public void setOwner(Customer owner) {
+        this.owner = owner;
+    }
+
     public ArrayList<Repair> getRepairs() {
         return repairs;
     }

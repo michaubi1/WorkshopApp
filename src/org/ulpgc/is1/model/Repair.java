@@ -92,6 +92,23 @@ public class Repair {
     public Vehicle getVehicle() {
         return vehicle;
     }
+
+    public void setVehicle(Vehicle vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
+    }
+
+    public ArrayList<BreakdownTypes> getBreakdowns() {
+        return breakdowns;
+    }
+
+    public void setBreakdowns(ArrayList<BreakdownTypes> breakdowns) {
+        this.breakdowns = breakdowns;
+    }
+
     //TODO toString
     @Override
     public String toString()

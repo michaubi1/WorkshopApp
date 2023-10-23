@@ -54,4 +54,5 @@ public class SparePart {
         this.price = price;
         this.items = new ArrayList<>();
     }
+
 }
